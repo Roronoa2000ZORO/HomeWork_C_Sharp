@@ -3,9 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace HomeWork_C_Sharp
 {
-    class HW_day_1
+    class Car
+    {
+        private string _driverName; //Имя водителя
+        private int _currSpeed = 10; //Текущая скорость
+        public Car() //Конструктор по умолчанию
+        {
+            _driverName = "Михаель Шумахер";
+        }
+        
+        public void PrintState()   //Распечатка текущих данных
+        {
+            Console.WriteLine($"{_driverName} едет со скоростью {_currSpeed} км/ч.");
+        }
+    }
+        class HW_day_1
     {
         static void Main(string[] args)
         {
@@ -48,8 +63,9 @@ namespace HomeWork_C_Sharp
 #endif
 
 #if false // Задание 3
+            
             Console.WriteLine("Введите с клавиатуры 4 цыфры");
-            Console.WriteLine(Console.ReadLine()); 
+            Console.ReadLine()); 
 #endif
 #if false // Задание 4
             Console.WriteLine("Введите шестизначное число!");
@@ -68,6 +84,22 @@ namespace HomeWork_C_Sharp
 #endif
 
 
+            string str = "Простая строка";
+            char[] chrArr = new char[6];
+
+            Console.WriteLine("Реверсирование строки с помощью индексатора");
+
+            //for (int i = str.Length - 1; i >= 0; --i) Console.Write(str[i]);
+
+            foreach (char c in str)
+            {
+                Console.Write(c + "\n");
+            }
+            Console.WriteLine("\nКопирование строки в массив символов");
+            //Копируем шесть символов начиная с восьмой позиции и 
+            //помещаем в массив
+            //str.CopyTo(8, chrArr, 0, 6);
+            //Console.WriteLine(chrArr); }
         }
     }
 }
