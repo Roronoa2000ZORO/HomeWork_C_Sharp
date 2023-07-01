@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeWork_C_Sharp
 {
-    class Class1
+    class HW_7
     {
 #if false //Задание 1
         static void Main(string[] args)
