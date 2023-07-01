@@ -85,7 +85,7 @@ namespace HW_1_2
 #endif
 
 
-#if true
+#if false
         static void Main(string[] args)
         {
             Console.Write("Введите целое число N: ");
